@@ -1,3 +1,7 @@
 build
 .gradle
-
+workbench.xmi
+/bin/
+.classpath
+.project
+.settings
