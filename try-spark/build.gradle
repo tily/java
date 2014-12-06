@@ -1,0 +1,14 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'application'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	compile 'com.sparkjava:spark-core:2.0.0'
+	compile 'com.sparkjava:spark-template-velocity:2.0.0'
+}
+
+mainClassName = System.properties['mainClassName']

@@ -1,0 +1,10 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'application'
+repositories {
+	jcenter()
+}
+dependencies {
+	compile 'net.arnx:jsonic:1.3.0'
+}
+mainClassName = System.properties['mainClassName']
