@@ -1,0 +1,16 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'application'
+repositories {
+	jcenter()
+}
+dependencies {
+	compile 'net.arnx:jsonic:1.3.0'
+	compile 'javax.servlet:servlet-api:2.5'
+}
+mainClassName = System.properties['mainClassName']
+run {
+    if (project.hasProperty('args')) {
+        args project.args.split('\\s+')
+    }
+}
